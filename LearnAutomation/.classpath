@@ -65,5 +65,7 @@
 	<classpathentry kind="lib" path="C:/selenium-2.51.0/APACHE POI/poi-3.14-beta1/poi-ooxml-schemas-3.14-beta1-20151223.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-2.51.0/APACHE POI/poi-3.14-beta1/poi-scratchpad-3.14-beta1-20151223.jar"/>
 	<classpathentry kind="lib" path="C:/selenium-2.51.0/APACHE POI/poi-3.14-beta1/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-2.51.0/vivl/selenium-embedded-rc-driver-1.2-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="C:/selenium-2.51.0/selenium-server-standalone-2.48.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

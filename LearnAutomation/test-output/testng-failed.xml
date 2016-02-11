@@ -10,7 +10,7 @@
     <classes>
       <class name="DDT.WorpdressLoginExcel">
         <methods>
-          <include name="loginToWordpress" invocation-numbers="0 2"/>
+          <include name="loginToWordpress" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- DDT.WorpdressLoginExcel -->

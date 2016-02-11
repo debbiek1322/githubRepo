@@ -18,27 +18,30 @@ public class WorpdressLoginExcel {
 	
 	
 @Test(dataProvider="wordpressData")
-//for more data i change parameters and add more
+//for more data , change parameters and add more
 	public void loginToWordpress(String username,String password) throws InterruptedException{
 		
 		
 		
 		driver=new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://demosite.center/wordpress/wp-login.php");
 		
 		driver.findElement(By.id("user_login")).sendKeys(username);
 		driver.findElement(By.id("user_pass")).sendKeys(password);
 		driver.findElement(By.xpath(".//*[@id='wp-submit']")).click();
 		
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 //	System.out.println(driver.getTitle());
 //		
+//		Assert.assertTrue(driver.getTitle().contains("Dashboard"),"User is not able to login-Invalid Credentials");
+		
+	//	Assert.assertEquals("http://demosite.center/wordpress/wp-login.php",driver.getCurrentUrl()); 
+//		System.out.println("Page Title verified- User is able to login Successfully");
+		Assert.assertEquals("http://demosite.center/wordpress/wp-login.php",driver.getCurrentUrl()); 
 		Assert.assertTrue(driver.getTitle().contains("Dashboard"),"User is not able to login-Invalid Credentials");
 		System.out.println("Page Title verified- User is able to login Successfully");
-		
-		
-	}
+}
 @AfterMethod
 public void tearDown(){
 	driver.quit();

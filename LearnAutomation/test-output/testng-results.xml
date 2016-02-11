@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="3" passed="1">
+<testng-results skipped="0" failed="3" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="161841" started-at="2016-02-10T12:17:15Z" finished-at="2016-02-10T12:19:57Z">
+  <suite name="Default suite" duration-ms="92955" started-at="2016-02-11T09:00:11Z" finished-at="2016-02-11T09:01:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="161841" started-at="2016-02-10T12:17:15Z" finished-at="2016-02-10T12:19:57Z">
+    <test name="Default test" duration-ms="92955" started-at="2016-02-11T09:00:11Z" finished-at="2016-02-11T09:01:44Z">
       <class name="DDT.WorpdressLoginExcel">
-        <test-method status="FAIL" signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="loginToWordpress" duration-ms="25410" started-at="2016-02-10T14:17:16Z" data-provider="wordpressData" finished-at="2016-02-10T14:17:42Z">
+        <test-method status="FAIL" signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="loginToWordpress" duration-ms="23065" started-at="2016-02-11T11:00:13Z" data-provider="wordpressData" finished-at="2016-02-11T11:00:36Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at DDT.WorpdressLoginExcel.loginToWordpress(WorpdressLoginExcel.java:37)
+	at DDT.WorpdressLoginExcel.loginToWordpress(WorpdressLoginExcel.java:42)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToWordpress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="tearDown" is-config="true" duration-ms="858" started-at="2016-02-10T14:17:42Z" finished-at="2016-02-10T14:17:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="tearDown" is-config="true" duration-ms="2830" started-at="2016-02-11T11:00:36Z" finished-at="2016-02-11T11:00:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="loginToWordpress" duration-ms="30066" started-at="2016-02-10T14:17:43Z" data-provider="wordpressData" finished-at="2016-02-10T14:18:13Z">
+        <test-method status="FAIL" signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="loginToWordpress" duration-ms="36844" started-at="2016-02-11T11:00:39Z" data-provider="wordpressData" finished-at="2016-02-11T11:01:16Z">
           <params>
             <param index="0">
               <value>
@@ -77,47 +77,27 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToWordpress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="tearDown" is-config="true" duration-ms="791" started-at="2016-02-10T14:18:13Z" finished-at="2016-02-10T14:18:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="loginToWordpress" duration-ms="101544" started-at="2016-02-10T14:18:13Z" data-provider="wordpressData" finished-at="2016-02-10T14:19:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo1234]]>
-              </value>
-            </param>
-          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: {"method":"id","selector":"user_login"}
-Command duration or timeout: 51.06 seconds
+Command duration or timeout: 10.91 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.51.0', revision: '1af067d', time: '2016-02-05 19:11:55'
 System info: host: 'stationdev7', ip: '10.10.0.214', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e3b0a86b-4f82-473c-b66f-ba0026423f11
+Session ID: 464ee380-8fdf-4f9c-9e33-095fcf0e65b9
 *** Element info: {Using=id, value=user_login}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"user_login"}
-Command duration or timeout: 51.06 seconds
+Command duration or timeout: 10.91 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.51.0', revision: '1af067d', time: '2016-02-05 19:11:55'
 System info: host: 'stationdev7', ip: '10.10.0.214', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e3b0a86b-4f82-473c-b66f-ba0026423f11
+Session ID: 464ee380-8fdf-4f9c-9e33-095fcf0e65b9
 *** Element info: {Using=id, value=user_login}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -160,15 +140,103 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.51.0', revision: '1af067d', time: '2016-02-05 19:11:55'
 System info: host: 'stationdev7', ip: '10.10.0.214', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/dmpasd/AppData/Local/Temp/anonymous6015768859128092414webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/dmpasd/AppData/Local/Temp/anonymous6015768859128092414webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/dmpasd/AppData/Local/Temp/anonymous4155312387965577141webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/dmpasd/AppData/Local/Temp/anonymous4155312387965577141webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToWordpress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="tearDown" is-config="true" duration-ms="1666" started-at="2016-02-10T14:19:55Z" finished-at="2016-02-10T14:19:57Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="tearDown" is-config="true" duration-ms="1460" started-at="2016-02-11T11:01:16Z" finished-at="2016-02-11T11:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="loginToWordpress" duration-ms="26079" started-at="2016-02-11T11:01:17Z" data-provider="wordpressData" finished-at="2016-02-11T11:01:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demo1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"user_login"}
+Command duration or timeout: 10.81 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067d', time: '2016-02-05 19:11:55'
+System info: host: 'stationdev7', ip: '10.10.0.214', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bac9c397-9561-46ff-96e7-0cdcf6ef78f6
+*** Element info: {Using=id, value=user_login}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"user_login"}
+Command duration or timeout: 10.81 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067d', time: '2016-02-05 19:11:55'
+System info: host: 'stationdev7', ip: '10.10.0.214', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bac9c397-9561-46ff-96e7-0cdcf6ef78f6
+*** Element info: {Using=id, value=user_login}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at DDT.WorpdressLoginExcel.loginToWordpress(WorpdressLoginExcel.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"user_login"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067d', time: '2016-02-05 19:11:55'
+System info: host: 'stationdev7', ip: '10.10.0.214', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/dmpasd/AppData/Local/Temp/anonymous810187533189197785webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/dmpasd/AppData/Local/Temp/anonymous810187533189197785webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToWordpress -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DDT.WorpdressLoginExcel@30c7da1e]" name="tearDown" is-config="true" duration-ms="855" started-at="2016-02-11T11:01:43Z" finished-at="2016-02-11T11:01:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
