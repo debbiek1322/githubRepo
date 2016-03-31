@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42180" started-at="2016-03-29T11:08:30Z" finished-at="2016-03-29T11:09:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42180" started-at="2016-03-29T11:08:30Z" finished-at="2016-03-29T11:09:12Z">
+      <class name="POMWrdprs.POMWrdprs.POMWordpressVerifyLogin">
+        <test-method status="PASS" signature="verifyValidLogin()[pri:0, instance:POMWrdprs.POMWrdprs.POMWordpressVerifyLogin@1c53fd30]" name="verifyValidLogin" duration-ms="42126" started-at="2016-03-29T14:08:30Z" finished-at="2016-03-29T14:09:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+      </class> <!-- POMWrdprs.POMWrdprs.POMWordpressVerifyLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
